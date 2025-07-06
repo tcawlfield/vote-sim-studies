@@ -1,0 +1,7 @@
+seaborn
+pyarrow!=19.0.0
+awkward
+tomlkit
+pandas
+ipykernel
+pyyaml
