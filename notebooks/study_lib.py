@@ -1,3 +1,4 @@
+import os
 from tempfile import TemporaryDirectory
 from pathlib import Path
 import subprocess
@@ -15,13 +16,14 @@ MODULE_PATH = Path(__file__).parent
 VOTING = MODULE_PATH / "voting"
 
 
-def do_run(config, trials) -> ak.Array:
+def do_run(config, trials, show_output=False) -> ak.Array:
     with TemporaryDirectory() as temp_dir:
         temp_dir = Path(temp_dir)
         config_file = temp_dir / "config.toml"
         with open(config_file, "w") as fout:
             tomlkit.dump(config, fout)
         pq_file = temp_dir / "results.parquet"
+        os.environ["RUST_LOG"] = "warn"
         cp = subprocess.run(
             [
                 VOTING,
@@ -33,12 +35,16 @@ def do_run(config, trials) -> ak.Array:
                 str(trials),
             ],
             check=False,
-            capture_output=True,
+            # capture_output=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
         )
         last_config_file = "/tmp/voting_last_config.toml"
         shutil.copyfile(config_file, last_config_file)
+        if cp.returncode != 0 or show_output:
+            print(cp.stdout.decode("utf-8"))
+            # print(cp.stderr.decode("utf-8"))
         if cp.returncode != 0:
-            print(cp.stderr)
             raise ValueError(f"voting process failed -- see perhaps {last_config_file}")
         results = ak.from_parquet(pq_file)
     return results
@@ -63,14 +69,18 @@ def config_series(base_config, parameter, pvalues):
         yield (param_name, val, config)
 
 
-def run_experiment(config_seq, trials=2000, pi=False, sm=False, with_results=False):
+def run_experiment(
+    config_seq, trials=2000, pi=False, sm=False, with_results=False, show_output=False
+):
     """
     pi: show percent elections that are non-ideal
-    sm: Show smith set stats: avg_nsmith is average number of candidates in the Smith set (1 if no cycle)
+    sm: Show smith set stats:
+        avg_nsmith is average number of candidates in the Smith set (1 if no cycle)
     {method}_insm: *percent* of time this method's winner is in the Smith set
     """
     iexp = 0
     table_data = defaultdict(list)
+    results_list = []
     for config_tuple in config_seq:
         if isinstance(config_tuple, tuple):
             (pname, pval, config) = config_tuple
@@ -78,11 +88,10 @@ def run_experiment(config_seq, trials=2000, pi=False, sm=False, with_results=Fal
             (pname, pval, config) = ("config_num", iexp, config_tuple)
         iexp += 1  # Only for the case that config_seq is a list of configs.
 
-        results = do_run(config, trials)
+        results = do_run(config, trials, show_output=show_output)
         table_data[pname].append(pval)
         if sm:
             table_data["avg_nsmith"].append(ak.mean(results.num_smith))
-        results_list = []
         for f in results.methods.fields:
             mean_regret = ak.mean(results.methods[f].regret)
             table_data[f"{f}_mR"].append(mean_regret)
@@ -100,8 +109,8 @@ def run_experiment(config_seq, trials=2000, pi=False, sm=False, with_results=Fal
                 table_data[f"{f}_insm"].append(
                     np.count_nonzero(in_smith) / len(in_smith) * 100
                 )
-            if with_results:
-                results_list.append(results)
+        if with_results:
+            results_list.append(results)
     # print(repr(table_data))
     df = pd.DataFrame(table_data)
     if results_list:
