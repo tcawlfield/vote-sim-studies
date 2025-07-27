@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="134.0034mm"
+   height="38.294399mm"
+   viewBox="0 0 134.0034 38.294399"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="probability-diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1"
+     inkscape:cx="248"
+     inkscape:cy="276.5"
+     inkscape:window-width="1627"
+     inkscape:window-height="1276"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="154"
+       y="401"
+       width="486"
+       height="70.999985"
+       id="rect7" />
+    <rect
+       x="171"
+       y="539"
+       width="211"
+       height="154"
+       id="rect6" />
+    <marker
+       style="overflow:visible"
+       id="marker4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-39.493093,-75.476428)">
+    <rect
+       style="fill:none;stroke:#1a1a1a;stroke-width:0.264583"
+       id="rect1"
+       width="113.24167"
+       height="21.695829"
+       x="49.873959"
+       y="84.402084" />
+    <path
+       style="fill:none;stroke:#1a1a1a;stroke-width:0.352778;stroke-dasharray:none;marker-start:url(#Triangle);marker-end:url(#marker2)"
+       d="M 40.745833,106.09792 H 172.24375"
+       id="path1" />
+    <path
+       style="fill:none;stroke:#1a1a1a;stroke-width:0.352777;stroke-dasharray:none;marker-end:url(#marker4)"
+       d="M 106.49479,106.09792 V 76.729166"
+       id="path3"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.9389px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352777;stroke-dasharray:none"
+       x="161.39584"
+       y="113.77083"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352778"
+         x="161.39584"
+         y="113.77083">1</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text7"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.6667px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect7);display:inline;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:1.33333;stroke-dasharray:none" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.352777;stroke-dasharray:none;stroke-opacity:1"
+       d="M 143.93333,106.09791 V 84.402082"
+       id="path7" />
+    <rect
+       style="fill:#fa6f34;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.352777;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8"
+       width="19.182301"
+       height="21.695833"
+       x="143.93333"
+       y="84.402084" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.9389px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352777;stroke-dasharray:none"
+       x="142.08125"
+       y="113.77083"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352778"
+         x="142.08125"
+         y="113.77083">x</tspan></text>
+    <rect
+       style="fill:#fa6f34;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.352777;stroke-dasharray:none;stroke-opacity:1"
+       id="rect9"
+       width="19.182301"
+       height="21.695833"
+       x="49.873959"
+       y="84.402084" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.9389px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352777;stroke-dasharray:none"
+       x="66.410423"
+       y="113.77083"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352778"
+         x="66.410423"
+         y="113.77083">-x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.9389px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352777;stroke-dasharray:none"
+       x="48.154179"
+       y="113.77083"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.352778"
+         x="48.154179"
+         y="113.77083">-1</tspan></text>
+  </g>
+</svg>

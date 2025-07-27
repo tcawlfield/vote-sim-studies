@@ -16,12 +16,12 @@ He writes their name on his ballot. I've always admired this! It shows
 dedication and independent thought.
 
 My friend once made a bold claim about this: "If everyone did their own digging
-and voted for someone they really liked best, we would all get much better
+and voted for someone they really liked the *best*, we would all get much better
 people into office." Is this true? Intuitively, it feels right.
 
 His approach was an extreme version of "honest voting." I'm not going to dig
 into exactly this approach here, because it's more of a discussion of write-in
-candidates than anything else. Instead, here I'll look at a more boring
+candidates than anything else. Instead, here I'll look at a much more boring
 question. Should I vote for an independent candidate that I like best, or should
 I choose only between those candidates that seem likely to win?
 
@@ -49,7 +49,7 @@ able to guess which candidates ought to have the highest numbers of votes
 preference *between those*.
 
 Again: Should I vote for an independent candidate if I prefer them to a
-major-party candidate? The *self-interested voter* is a strategic voter and I've
+major-party candidate? The *self-interested voter* is a strategic voter, and I've
 already given you my answer: No. You would have more impact if you restrict your
 choice between those (usually two) candidates most likely to win.
 
@@ -102,7 +102,7 @@ is [explained here](https://electionscience.github.io/vse-sim/) --- I liked
 Quinn's idea and used it here. 100% score is achieved when the election method has
 elected the candidate who has the maximum total (perceived) utility among all
 candidates. I'll claim that this candidate is the "ideal best" candidate for the
-group. This metric can be criticised, but I am encouraged by the way this tracks
+group. This metric can be criticized, but I am encouraged by the way this tracks
 with many other aspects of voting that are ideal. Voting methods that meet a lot
 of important voting criteria tend to also do a good job of picking high-utility
 candidates. So unless you're nitpicking about 1% differences here and there,
@@ -167,7 +167,7 @@ approval ballot, it's a decent choice. Range voting would be a better choice.
 These three methods are score-based (okay STAR is hybrid). A score-based voting
 system lets you score each candidate individually. Unlike ranked voting methods,
 voters can give the same score to multiple candidates. Range voting is
-similar to what Amazon, Yelp, Google Maps, etc use for
+similar to what Amazon, Yelp, Google Maps, etc. use for
 ratings. Give something a rating, and find the thing with the highest average
 rating. Approval is a minimal score-based system: Voters score each candidate
 with either 0 (don't approve) or 1 (approve). As long as you have, say, 100 or
@@ -189,7 +189,7 @@ the gap widens the voter's score separation between the two most-hopeful
 candidates. The most extreme version of this has voters give the max score to
 their favorite hopeful candidate as well as all other candidates they like
 better. And the bottom score goes to all the rest. If all other voters do this,
-it gives the exact same results as strategic approval voting. No shades of grey.
+it gives the exact same results as strategic approval voting. No shades of gray.
 But for the Range and STAR results above, I used a strategy gap of 75% of the
 full range.
 
@@ -201,7 +201,7 @@ strategic voting. STAR stands for "Score, Then Automatic Runoff." It uses a
 6-point range-voting ballot -- score each candidate from 0 to 5, inclusive. To find the
 winner, first add up all the scores. Find the top two candidates by score total.
 Then, count the number of ballots that score one of those top two higher than the other
-one, and vice-versa. (In this step it does not matter *how* different, just that
+one, and vice versa. (In this step it does not matter *how* different, just that
 the higher-scored one counts as a vote *for* that candidate.) This is a little
 bit like strategic range voting. The strategist gets a pre-election "poll" which
 is round #1 of STAR. Then they give the final preference info on their real
@@ -273,7 +273,7 @@ awful choice to make of which one candidate they weigh in on.
 
 And strategic approval voting takes a basically good method and actually makes
 it better. My version of strategic approval voting is to use the free parameter
--- where a voter draws the line between "approve" and "disaprove" -- and sets it
+-- where a voter draws the line between "approve" and "disapprove" -- and sets it
 to the optimum value for each voter to communicate that information that's most
 needed. When you compare this with plurality voting, voters get the best of both
 worlds. They can vote honestly and strategically at the same time. "I like this
@@ -289,9 +289,20 @@ also see how these automatically include all pair-wise preference information.
 So again if all voters can somehow (magically) find the right top-two candidates
 before voting, and communicate their final preference as a strategic vote, then
 strategic voting with plurality would effectively turn it into a Condorcet
-method (whenever a Condorcet winner exists). All of the Condorcet methods I have
+method (whenever a Condorcet winner exists). All the Condorcet methods I have
 simulated seem to do about as well as the score-based methods in terms of
 voter satisfaction and lack of a center-squeeze effect. For another post.
+
+## It would be nice to not need strategy
+
+Wouldn't it be nice to use an election method where you could express yourself
+accurately and honestly, and have just as much of an impact on the election
+results as everyone else? That is one of the benchmarks for good voting systems.
+First-past-the-post just does not allow this. You don't get to express your
+preference for any more than one candidate on a ballot. You need strategy in
+order to focus your communication on the most relevant aspect of your
+preferences. But other voting methods are much less sensitive to voting
+strategies, and those are (for political elections especially) ones to support.
 
 <!--
 ## The fine print

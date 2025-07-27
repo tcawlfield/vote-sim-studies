@@ -1,0 +1,57 @@
+candidates = 8
+voters = 1001
+
+[[considerations]]
+[[considerations.Issues]]
+halfcsep = 0.0
+halfvsep = 0.0
+sigma = 1.0
+sigma_vtr = 2.0
+
+[[considerations.Issues]]
+halfcsep = 0.0
+halfvsep = 0.0
+sigma = 1.0
+sigma_vtr = 2.0
+
+[[methods]]
+[methods.Plurality]
+strat = "Honest"
+
+[[methods]]
+[methods.Plurality]
+strat = "Strategic"
+
+[[methods]]
+[methods.InstantRunoff]
+
+[[methods]]
+[methods.Range]
+nranks = 2
+strat = "Honest"
+
+[[methods]]
+[methods.Range]
+nranks = 2
+strat = "Strategic"
+
+[[methods]]
+[methods.STAR]
+strat = "Honest"
+
+[[methods]]
+[methods.STAR]
+strat = "Strategic"
+strategic_stretch_factor = 2.0
+
+[[methods]]
+[methods.BtrIrv]
+strat = "Honest"
+
+[[methods]]
+[methods.RP]
+strat = "Honest"
+
+[[methods]]
+[methods.MM]
+strat = "Honest"
