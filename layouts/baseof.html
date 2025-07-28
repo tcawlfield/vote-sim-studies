@@ -66,7 +66,7 @@
     </main>
     {{ block "footer" . }}{{ partials.IncludeCached "site-footer.html" . }}{{ end }}
 
-  <script type="text/javascript" src="/js/lightbox.js"></script>
-  <link rel="stylesheet" href="/css/lightbox.css">
+  <script type="text/javascript" src="{{ .Site.BaseURL }}/js/lightbox.js"></script>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/lightbox.css">
 </body>
 </html>
