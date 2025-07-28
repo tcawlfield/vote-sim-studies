@@ -239,14 +239,14 @@ almost cheating here because there's always a Condorcet winner, but this
 result looks extremely promising. There are wiggles out at the fringes, but
 the right-side Y axis is autoscaled. You're looking at 1% deviations!
 And I don't think it's the voting method causing this. These fringe
-effects co down when I increase the number of simulated voters. It's why
+effects go down when I increase the number of simulated voters. It's why
 I ran with 100,000 voters. The cause of this, I'm fairly certain, is
 related to the variance of the mean being smaller than the variance
 of the median. Condorcet can elect a more-fringe candidate when the
 *median* of the voters' positions fluctuates to one side or the other,
 but the maximum utility candidate is more-fringe when the *mean* of the
 voters has fluctuated. I can show this qualitatively, but I have not
-yet worked out this explanation qualitatively.
+yet worked out this explanation quantitatively.
 
 ## Other voting methods -- Show me **all** the graphs!
 
